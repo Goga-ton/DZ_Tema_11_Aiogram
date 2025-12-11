@@ -50,17 +50,17 @@ class WeatherStates(StatesGroup):
 
 
 @dp.message(Command("city"))
-async def city_command(message: types.Message, state: FSMContext):
+async def city_command(message:Message, state: FSMContext):
     await message.answer("Введите название города:")
     await state.set_state(WeatherStates.waiting_city)
 
 
 @dp.message(WeatherStates.waiting_city)
-async def get_city_weather(message: types.Message, state: FSMContext):
+async def get_city_weather(message:Message, state: FSMContext):
     city = message.text.strip()
 
-    api_key = 'd8c70d191e440c410b7a57897a5ee1c5'
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
+    ap_key = config.api_key
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={ap_key}&units=metric"
 
     try:
         response = requests.get(url)
