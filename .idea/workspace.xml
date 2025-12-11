@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AiogramTeleBot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="DZ_TG01">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/DZ_TG01(Aiogram).py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/DZ_TG01(Aiogram).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG01-02_Aiogram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,38 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Goga-ton&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Goga-ton/DZ_Tema_11_Aiogram.git&quot;,
+    &quot;accountId&quot;: &quot;ac227246-2a5c-49d9-8bbe-7b45b295db72&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -41,13 +70,24 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.DZ_TG01(Aiogram).executor": "Run",
+    "Python.TG01-02_Aiogram.executor": "Run",
     "Python.config.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/AiogramTeleBot/Тема_11-Aigram(-TG-)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton_B\PycharmProjects\AiogramTeleBot\Тема_11-Aigram(-TG-)" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,6 +103,37 @@
       <option name="presentableId" value="Default" />
       <updated>1764840523367</updated>
     </task>
+    <task id="LOCAL-00001" summary="work1">
+      <option name="closed" value="true" />
+      <created>1764861272992</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764861272992</updated>
+    </task>
+    <task id="LOCAL-00002" summary="work2">
+      <option name="closed" value="true" />
+      <created>1764863141351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764863141351</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DZ_TG01">
+      <option name="closed" value="true" />
+      <created>1765294669426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765294669427</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="work1" />
+    <MESSAGE value="work2" />
+    <MESSAGE value="DZ_TG01" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ_TG01" />
   </component>
 </project>

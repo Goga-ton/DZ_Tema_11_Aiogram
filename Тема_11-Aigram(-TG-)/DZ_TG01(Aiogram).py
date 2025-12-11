@@ -42,8 +42,8 @@ async def start(message:Message):
 
 @dp.message(Command('help'))
 async def help(message:Message):
-    await message.answer('В Данном Telegram боте ты сможешь: 1) Получить оценку фотографии загрузив ее; 2) Узнать погоду в городе введя его название;'
-                         '3) Получить класную фотку соответсвующею твоему настроению.')
+    await message.answer('В Данном Telegram боте ты сможешь: \n1) Получить оценку фотографии загрузив ее; \n2) Узнать погоду в городе введя его название;'
+                         '\n3) Получить класную фотку соответсвующею твоему настроению.')
 
 class WeatherStates(StatesGroup):
     waiting_city = State()

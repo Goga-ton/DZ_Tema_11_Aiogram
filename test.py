@@ -18,3 +18,4 @@ def get_weather(city):
 
 result = get_weather('Tomsk')
 # print(result['name'])
+
