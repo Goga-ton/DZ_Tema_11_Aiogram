@@ -22,7 +22,7 @@ async def help(message: Message):
 
 @dp.message(Command('city'))
 async def city(message: Message):
-    await message.answer('Это меню по предоставлению Инвайтных битонов!! :)', reply_markup=kb.keyb_inl) # или можно "reply_markup=kb.keyb_inl"
+    await message.answer('Это меню по предоставлению Инвайтных битонов!! :)', reply_markup=kb.keyb_inl)
 
 @dp.callback_query(F.data == 'news')
 async def news(callback: CallbackQuery):

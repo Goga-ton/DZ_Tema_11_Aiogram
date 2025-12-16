@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="DZ_TG03">
+    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="TG04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/DZ_TG03_Aiogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/DZ_TG03(Aiogram).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG01-02_Aiogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG01-02_Aiogram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG03_Aiogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG03_Aiogram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,8 @@
     "Python.DZ_TG01(Aiogram).executor": "Run",
     "Python.DZ_TG02(Aiogram).executor": "Run",
     "Python.DZ_TG03_Aiogram.executor": "Run",
+    "Python.DZ_TG04(Aiogram).executor": "Run",
+    "Python.DZ_TG04_keyboards.executor": "Run",
     "Python.TG01-02_Aiogram.executor": "Run",
     "Python.TG03_Aiogram.executor": "Run",
     "Python.TG04_keyboards.executor": "Run",
@@ -83,14 +83,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/AiogramTeleBot",
+    "last_opened_file_path": "C:/Users/Anton_B/PycharmProjects/AiogramTeleBot/Тема_11-Aigram(-TG-)",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Anton_B\PycharmProjects\AiogramTeleBot" />
       <recent name="C:\Users\Anton_B\PycharmProjects\AiogramTeleBot\Тема_11-Aigram(-TG-)" />
+      <recent name="C:\Users\Anton_B\PycharmProjects\AiogramTeleBot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anton_B\PycharmProjects\AiogramTeleBot\Тема_11-Aigram(-TG-)" />
@@ -167,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765796808435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TG04">
+      <option name="closed" value="true" />
+      <created>1765870043110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765870043110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,6 +186,7 @@
     <MESSAGE value="DZ_TG02+" />
     <MESSAGE value="TG03" />
     <MESSAGE value="DZ_TG03" />
-    <option name="LAST_COMMIT_MESSAGE" value="DZ_TG03" />
+    <MESSAGE value="TG04" />
+    <option name="LAST_COMMIT_MESSAGE" value="TG04" />
   </component>
 </project>
