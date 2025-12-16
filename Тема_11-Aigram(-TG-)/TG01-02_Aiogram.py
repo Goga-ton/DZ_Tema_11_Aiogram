@@ -1,8 +1,9 @@
 import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart, Command
-from aiogram.types import Message, FSInputFile
+from aiogram.types import Message, FSInputFile, CallbackQuery
 import config
+import TG04_keyboards as kb
 import random
 from gtts import gTTS
 import os
@@ -13,11 +14,30 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(message:Message):
-    await message.answer(f'Приветики, {message.from_user.full_name}') #указывает имя пользователя
+    await message.answer(f'Приветики, {message.from_user.full_name}', reply_markup=await kb.list_kb()) #указывает имя пользователя (reply_markup=kb.keyb - добавляет кнопки)
 
 @dp.message(Command('help'))
 async def help(message: Message):
-    await message.answer('Это очень КРУТОЙ помощник на Ваши запросы')
+    await message.answer('Это очень КРУТОЙ помощник на Ваши запросы', reply_markup=kb.keyb) # или можно "reply_markup=kb.keyb_inl"
+
+@dp.message(Command('city'))
+async def city(message: Message):
+    await message.answer('Это меню по предоставлению Инвайтных битонов!! :)', reply_markup=kb.keyb_inl) # или можно "reply_markup=kb.keyb_inl"
+
+@dp.callback_query(F.data == 'news')
+async def news(callback: CallbackQuery):
+    await callback.answer('Новости подгружаются', show_alert=True) # уведомление о происходящем действии, если убрать "show_alert=True" то будет просто всплывающая надпись, а так окно с кнопочкой
+    await callback.message.answer('Вот свежие новости')
+
+@dp.callback_query(F.data == 'catalog')
+async def catalog(callback: CallbackQuery):
+    await callback.answer('Каталог обновляется') # уведомление о происходящем действии, всплывающая надпись.
+    await callback.message.edit_text('Вот актуальные данные о каталоге', reply_markup=await kb.list_kb_inv())
+
+@dp.message(F.text == 'Test-1')
+async def test(message: Message):
+    await message.answer('Обработка нажатия на КНОПКУ')
+
 
 @dp.message(Command('photo', prefix="-"))
 async def photo(message:Message):
