@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="TG04">
+    <list default="true" id="9fa044b3-58a7-44e5-8673-e9f625eaa53c" name="Changes" comment="DZ_TG04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG01-02_Aiogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Тема_11-Aigram(-TG-)/TG01-02_Aiogram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +75,7 @@
     "Python.TG01-02_Aiogram.executor": "Run",
     "Python.TG03_Aiogram.executor": "Run",
     "Python.TG04_keyboards.executor": "Run",
+    "Python.cats.executor": "Run",
     "Python.config.executor": "Run",
     "Python.main.executor": "Run",
     "Python.test.executor": "Run",
@@ -175,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765870043110</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="DZ_TG04">
+      <option name="closed" value="true" />
+      <created>1765877997704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765877997704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -187,6 +195,7 @@
     <MESSAGE value="TG03" />
     <MESSAGE value="DZ_TG03" />
     <MESSAGE value="TG04" />
-    <option name="LAST_COMMIT_MESSAGE" value="TG04" />
+    <MESSAGE value="DZ_TG04" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ_TG04" />
   </component>
 </project>
