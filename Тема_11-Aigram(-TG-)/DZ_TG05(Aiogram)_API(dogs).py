@@ -1,0 +1,62 @@
+import asyncio
+import requests
+from aiogram import Bot, Dispatcher, F
+from aiogram.filters import CommandStart, Command
+from aiogram.types import Message
+from googletrans import Translator
+#ссылка на конфиг, т.к. он лежит не в текущем каталоге
+import config
+
+bot = Bot(token=config.tltok)
+dp = Dispatcher()
+translator = Translator()
+
+def get_cat_breeds():
+    url = 'https://api.thedogapi.com/v1/breeds'
+    headers = {'x-api-key' : config.dog_apikey}
+    response = requests.get(url, headers=headers)
+    return response.json()
+
+def get_cat_img_bread(bread_id):
+    url = f'https://api.thedogapi.com/v1/images/search?breed_ids={bread_id}'
+    headers = {'x-api-key' : config.dog_apikey}
+    response = requests.get(url, headers=headers)
+    data = response.json()
+    return data[0]['url']
+
+def get_bread_info(bread_name):
+    breads = get_cat_breeds()
+    for bread in breads:
+        print(f'{bread["name"]}')
+        if bread['name'].lower() == bread_name.lower():
+            return bread
+    return None
+
+@dp.message(CommandStart())
+async def start(message:Message):
+    await message.answer('Привет напиши мне название породы кошки и я пришлю ее фотку и информацию о ней')
+
+@dp.message()
+async def send_cat_info(message:Message):
+    bread_name = message.text
+    bread_info = get_bread_info(bread_name)
+    if bread_info:
+        cat_image = get_cat_img_bread(bread_info['id'])
+        life_span_ru = await translator.translate(bread_info["life_span"], dest='ru')
+        temperament_ru = await translator.translate(bread_info["temperament"], dest='ru')
+        # origin_ru = await translator.translate(bread_info["origin"], dest='ru')
+        bred_for_ru = await translator.translate(bread_info["bred_for"], dest='ru')
+        info = (f'Порода - {bread_info["name"]}\n'
+                f'Продолжительность жизни - {life_span_ru.text} лет\n'
+                f'Темперамент - {temperament_ru.text}\n'
+                # f'Происхождение - {origin_ru.text}\n'
+                f'Выведен для - {bred_for_ru.text}')
+        await message.answer_photo(photo=cat_image, caption=info)
+    else:
+        await message.answer('Порода не найдена')
+
+async def main():
+    await dp.start_polling(bot) #Ваш бот использует polling — программа сама "стучится" к Telegram и распределяет сообщения по хендлерам по фильтрам.
+
+if __name__ == '__main__':
+    asyncio.run(main())

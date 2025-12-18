@@ -22,6 +22,7 @@ def get_random_apod():
 
     url = f'https://api.nasa.gov/planetary/apod?api_key={config.nasa_apikey}&date={date_str}'
     response = requests.get(url)
+    print(response.json())
     return response.json()
 
 @dp.message(Command('fnasa'))
