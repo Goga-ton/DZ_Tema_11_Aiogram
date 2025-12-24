@@ -34,7 +34,7 @@ def get_bread_info(bread_name):
 
 @dp.message(CommandStart())
 async def start(message:Message):
-    await message.answer('Привет напиши мне название породы кошки и я пришлю ее фотку и информацию о ней')
+    await message.answer('Привет напиши мне название породы собаки и я пришлю ее фотку и информацию о ней')
 
 @dp.message()
 async def send_cat_info(message:Message):
